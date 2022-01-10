@@ -1,0 +1,35 @@
+{% extends 'project_FSS/base/base.html' %}
+
+{% load static %}
+
+{% block titre_page %} {{ title_page}} {% endblock%}
+
+{% block css_site%}
+    <link rel="stylesheet" href="{% static 'project_FSS/style/details-project_FSS.css'%}">
+{%endblock%}
+
+{% block titre_principal%}
+    {{ title_page}}
+{%endblock%}
+test
+{% block body%}
+<article>
+    <img id='main-image' src="{{image_page.url}}" alt="">
+    
+    <section id="localisation">
+        <h2> Lieu de rencontre</h2>
+        <address> Cette rencontre a lieu à <span>{{ location_page}}</span> (ADRESSE).</address>
+    </section>
+    
+    <section id="details">
+        <h2> De quoi s'agit-il ??</h2>
+        <p> {{ description_page}}</p>
+        <footer> Pour plus de détails, merci de <a href="">nous contacter</a> nous allons vous répondre avec plaisir :)!!</footer>
+    </section>
+    
+    <section>
+        <h2>Inscrivez-vous!!</h2>
+        FORMULAIRE
+    </section>
+</article>
+{%endblock%}

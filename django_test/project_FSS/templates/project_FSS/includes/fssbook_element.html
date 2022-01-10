@@ -1,0 +1,16 @@
+<li class="fssbook_item">
+    <article>
+        <div class="fssbook_summary">
+            <div class="fssbook_image">
+                <img src="{{ element.image.url }}" alt="element.title">
+            </div>
+            <div class="fssbook_details">
+                <h3> {{element.title}}</h3>
+                <address> {{element.localisation}}</address>
+            </div>
+        </div>
+        <div class="fssbook_actions">
+            <a href="{% url 'fssbook_details' element.slug %}" class="btn"> Plus de détails</a>
+        </div>
+    </article>
+</li>

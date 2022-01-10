@@ -1,0 +1,29 @@
+{% extends 'project_FSS/base/base.html' %}
+{%load static %}
+
+{% block titre_page %} Notre Fssbook{% endblock%}
+
+{% block css_site%}
+<link rel="stylesheet" href="{% static 'project_FSS/style/all-project_FSS.css' %}">
+{%endblock%}
+
+{% block titre_principal%}
+    Notre mini site est en cours de création...
+{%endblock%}
+{% block contenu_principal%}
+    <p>Rencontrer les personnes qui vous correspondent!!!</p>
+{%endblock%}
+
+{% block body%}
+
+{% include 'project_FSS/includes/javascript_test.html'%}
+
+<section>
+    <h2>Your next challanges</h2>
+    <ol>
+        {% for element in cle_dic %}
+            {% include 'project_FSS/includes/fssbook_element.html'%}
+        {% endfor%}
+    </ol>
+</section>
+{%endblock%}

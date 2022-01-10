@@ -1,0 +1,23 @@
+<script language="JavaScript"
+    type="text/JavaScript">
+    function enable(f) {
+    f.elements["password"].disabled = false;
+    }
+    function disable(f) {
+    f.elements["password"].disabled = true;
+    }
+    window.onload = function(){
+    alert("Hello les geeks");
+    }
+    </script>
+<form>
+    <input type="radio" name="radiobutton"
+    value="Connexion"checked="checked"
+    onclick="enable(this.form);" />Login
+    <input type="radio" name="radiobutton"
+    value="Inscription"
+    onclick="disable(this.form);" />Register<br />
+    Login &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="username" /> <br />
+    Mot de passe <input type="password" name="password" /><br />
+    <input type="submit" value="Valider"/>
+</form>

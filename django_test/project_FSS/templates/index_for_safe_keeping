@@ -1,0 +1,12 @@
+<body>
+    <h1>Ma première page avec un language que je ne connait pas</h1>
+    <p>Bienvenue sur ma page... il ya rien d'autre...</p>
+    <IMG SRC="\static\images\monster-hunter-wiggler.gif" alt="Wiggler" style="width:498px;height:382px">
+    {% if show_project_FSS %}
+    {% for element in cle_dic %}
+        <h2>{{ element.title }}</h2>
+        {% endfor %}
+        {% else %}
+            <h2> RIIIIIII! </h2>
+    {% endif %}
+</body>
