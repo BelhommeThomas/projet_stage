@@ -1,3 +1,4 @@
+# unfinished
 # import
 import random
 from tkinter import *
