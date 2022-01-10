@@ -1,3 +1,4 @@
+# unfinished
 #library
 from tkinter import *
 
@@ -9,7 +10,7 @@ mrs.title("morse translator")
 user = Entry(mrs, width=35, borderwidth=5)
 user.grid(row=0, column=0, columnspan=3, padx = 10, pady=10)
 
-#the part that I'm going to hate aka telling it how to translate
+#the part that tells it how to translate
 mrsalfa = dict([
     ("A",".-"),("B","-..."),("C_","-.-."),("D_","-.."),("E_","."),("F_","..-."),("G_","--."),("H_","...."),("I_",".."),("J_",".---"),
     ("K_","-.-"),("L_",".-.."),("M_","--"),("N_","-."),("O_","---"),("P_",".--."),("Q_","--.-"),("R_",".-."),("S_","..."),("T_","-"),
